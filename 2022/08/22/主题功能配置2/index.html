@@ -1,0 +1,501 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>主题功能配置2 | 无名の小站</title><meta name="author" content="无名站长"><meta name="copyright" content="无名站长"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="评论通用设置各种评论模块从3.0.0开始，开启评论需要在 comments-use 中填写你需要的评论。 支持双评论显示，只需要配置两个评论(第一个为默认显示) 打开 主题配置文件 comments    参数 解释    use 使用的评论（请注意，最多支持两个，如果不需要请留空）  注意：双评论不能是 Disqus 和 Disqusjs 一起，由于其共用同一个 ID，会出错   text 是否">
+<meta property="og:type" content="article">
+<meta property="og:title" content="主题功能配置2">
+<meta property="og:url" content="http://example.com/2022/08/22/%E4%B8%BB%E9%A2%98%E5%8A%9F%E8%83%BD%E9%85%8D%E7%BD%AE2/index.html">
+<meta property="og:site_name" content="无名の小站">
+<meta property="og:description" content="评论通用设置各种评论模块从3.0.0开始，开启评论需要在 comments-use 中填写你需要的评论。 支持双评论显示，只需要配置两个评论(第一个为默认显示) 打开 主题配置文件 comments    参数 解释    use 使用的评论（请注意，最多支持两个，如果不需要请留空）  注意：双评论不能是 Disqus 和 Disqusjs 一起，由于其共用同一个 ID，会出错   text 是否">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/avatar.jpg">
+<meta property="article:published_time" content="2022-08-22T07:55:21.000Z">
+<meta property="article:modified_time" content="2022-08-24T10:53:30.833Z">
+<meta property="article:author" content="无名站长">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/avatar.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/08/22/%E4%B8%BB%E9%A2%98%E5%8A%9F%E8%83%BD%E9%85%8D%E7%BD%AE2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":600},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '主题功能配置2',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-08-24 18:53:30'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><style>#article-container.post-content h1:before, h2:before, h3:before, h4:before, h5:before, h6:before { -webkit-animation: avatar_turn_around 1s linear infinite; -moz-animation: avatar_turn_around 1s linear infinite; -o-animation: avatar_turn_around 1s linear infinite; -ms-animation: avatar_turn_around 1s linear infinite; animation: avatar_turn_around 1s linear infinite; }</style><!-- hexo injector head_end start --><link rel="stylesheet" href="https://unpkg.zhimg.com/hexo-butterfly-clock/lib/clock.min.css" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">无名の小站</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">主题功能配置2</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-08-22T07:55:21.000Z" title="发表于 2022-08-22 15:55:21">2022-08-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-24T10:53:30.833Z" title="更新于 2022-08-24 18:53:30">2022-08-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/">博客主题配置</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="主题功能配置2"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h1><div class="tabs" id="评论"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#评论-1">通用设置</button></li><li class="tab"><button type="button" data-href="#评论-2">各种评论模块</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="评论-1"><p>从3.0.0开始，开启评论需要在 <code>comments-use</code> 中填写你需要的评论。</p>
+<p>支持双评论显示，只需要配置两个评论(第一个为默认显示)</p>
+<p>打开 <code>主题配置文件</code> <code>comments</code></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">use</td>
+<td align="left">使用的评论（请注意，最多支持两个，如果不需要请留空）  注意：双评论不能是 Disqus 和 Disqusjs 一起，由于其共用同一个 ID，会出错</td>
+</tr>
+<tr>
+<td align="left">text</td>
+<td align="left">是否显示评论服务商的名字</td>
+</tr>
+<tr>
+<td align="left">lazyload</td>
+<td align="left">是否为评论开启lazyload，开启后，只有滚动到评论位置时才会加载评论所需要的资源（开启 lazyload 后，评论数将不显示）</td>
+</tr>
+<tr>
+<td align="left">count</td>
+<td align="left">是否在文章顶部显示评论数  livere、Giscus 和 utterances 不支持评论数显示</td>
+</tr>
+<tr>
+<td align="left">card_post_count</td>
+<td align="left">是否在首页文章卡片显示评论数  gitalk、livere 、Giscus 和 utterances 不支持评论数显示</td>
+</tr>
+</tbody></table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="评论-2"><ol>
+<li>Disqus</li>
+<li>Disqusjs</li>
+<li>livere(来必力)</li>
+<li>Gitalk</li>
+<li>Valine</li>
+<li>Waline</li>
+<li>Utterances</li>
+<li>Facebook Comments</li>
+<li><b>Twikoo</b></li>
+<li>Giscus</li>
+</ol><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h1 id="在线聊天"><a href="#在线聊天" class="headerlink" title="在线聊天"></a>在线聊天</h1><p>从3.0开始，Butterfly主题内置了多种在綫聊天工具。你可以选择开启一种，方便你与访客的交流。</p>
+<div class="tabs" id="聊天工具"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#聊天工具-1">通用设置</button></li><li class="tab"><button type="button" data-href="#聊天工具-2">各种聊天工具</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="聊天工具-1"><p>这些工具都提供了一个按钮可以打开&#x2F;关闭聊天窗口。<br>主题也提供了一个集合主题特色的按钮来替换这些工具本身的按钮，这个聊天按钮将会出现在右下角里。<br>你只需要把<code>chat_btn</code>打开就行。</p>
+<p>修改 <code>主题配置文件</code> <code>chat_btn</code></p>
+<p>为了不影响访客的体验，主题提供一个<code>chat_hide_show</code>配置<br>设为<code>true</code>后，使用工具提供的按钮时，只有向上滚动才会显示聊天按钮，向下滚动时会隐藏按钮。</p>
+<p>修改 <code>主题配置文件</code></p>
+<div class="note info flat"><p>如果使用工具自带的聊天按钮，按钮位置可能会遮挡右下角图标，请配置<code>rightside-bottom</code>调正右下角图标位置</p>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="聊天工具-2"><ol>
+<li>chatra</li>
+<li>tidio</li>
+<li>daovoice</li>
+<li>Gitter</li>
+<li>crisp</li>
+</ol><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h1 id="分享"><a href="#分享" class="headerlink" title="分享"></a>分享</h1><blockquote>
+<p>只能选择一个分享服务商</p>
+</blockquote>
+<ol>
+<li>AddThis</li>
+<li>Sharejs</li>
+<li>Addtoany</li>
+</ol>
+<h1 id="搜索系统"><a href="#搜索系统" class="headerlink" title="搜索系统"></a>搜索系统</h1><ol>
+<li>Algolia</li>
+<li>本地搜索</li>
+</ol>
+<h1 id="网站验证"><a href="#网站验证" class="headerlink" title="网站验证"></a>网站验证</h1><p>如果需要搜索引擎收录网站，可能需要登录对应搜索引擎的管理平台进行提交。<br>各自的验证码可从各自管理平台拿到</p>
+<p>修改 <code>主题配置文件</code> <code>site_verification</code></p>
+<h1 id="分析统计"><a href="#分析统计" class="headerlink" title="分析统计"></a>分析统计</h1><ol>
+<li>百度统计</li>
+<li>谷歌分析</li>
+<li>CNZZ分析</li>
+<li>Cloudflare分析</li>
+<li>Microsoft Clarity</li>
+</ol>
+<h1 id="广告"><a href="#广告" class="headerlink" title="广告"></a>广告</h1><ol>
+<li>谷歌广告</li>
+<li>手动广告配置</li>
+</ol>
+<h1 id="Math-数学"><a href="#Math-数学" class="headerlink" title="Math 数学"></a>Math 数学</h1><ol>
+<li>MathJax</li>
+<li>KaTeX</li>
+</ol>
+<h1 id="美化-x2F-特效"><a href="#美化-x2F-特效" class="headerlink" title="美化&#x2F;特效"></a>美化&#x2F;特效</h1><h2 id="自定义主题色"><a href="#自定义主题色" class="headerlink" title="自定义主题色"></a>自定义主题色</h2><p>可以修改大部分UI颜色</p>
+<p>修改 <code>主题配置文件</code> <code>theme_color</code></p>
+<blockquote>
+<p>颜色值必须被双引号包裹，就像<code>&quot;#000&quot;</code>而不是<code>#000</code>。否则将会在构建的时候报错！</p>
+</blockquote>
+<h2 id="网站背景"><a href="#网站背景" class="headerlink" title="网站背景"></a>网站背景</h2><p>默认显示白色，可设置图片或者颜色</p>
+<p>修改 <code>主题配置文件</code> <code>backgroud</code></p>
+<p>留意: 如果你的网站根目录不是’&#x2F;‘,使用本地图片时，需加上你的根目录。<br>例如：网站是 <a target="_blank" rel="noopener" href="https://yoursite.com/blog,%E5%BC%95%E7%94%A8%E4%B8%80%E5%BC%A0img/xx.png%E5%9B%BE%E7%89%87%EF%BC%8C%E5%88%99%E8%AE%BE%E7%BD%AEbackground%E4%B8%BA">https://yoursite.com/blog,引用一张img/xx.png图片，则设置background为</a> &#96;url(&#x2F;blog&#x2F;img&#x2F;xx.png)</p>
+<h2 id="footer-背景"><a href="#footer-背景" class="headerlink" title="footer 背景"></a>footer 背景</h2><p>修改 <code>主题配置文件</code> <code>footer_bg: true</code></p>
+<table>
+<thead>
+<tr>
+<th align="left">配置的值</th>
+<th align="left">效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">留空&#x2F;false</td>
+<td align="left">显示默认的顔色</td>
+</tr>
+<tr>
+<td align="left">img链接</td>
+<td align="left">图片的链接，显示所配置的图片</td>
+</tr>
+<tr>
+<td align="left">顔色(  HEX值 - #0000FF  RGB值 - rgb(0,0,255)  顔色单词 - orange  渐变色 - linear-gradient( 135deg, #E2B0FF 10%, #9F44D3 100%)  ）</td>
+<td align="left">对应的顔色</td>
+</tr>
+<tr>
+<td align="left">true</td>
+<td align="left">显示跟 top_img 一样</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>true</p>
+</blockquote>
+<h2 id="打字效果"><a href="#打字效果" class="headerlink" title="打字效果"></a>打字效果</h2><p>打字效果activate-power-mode</p>
+<p>修改 <code>主题配置文件</code> <code>activate-power-mode</code></p>
+<h2 id="背景特效"><a href="#背景特效" class="headerlink" title="背景特效"></a>背景特效</h2><div class="tabs" id="背景特效"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#背景特效-1">静态彩带</button></li><li class="tab"><button type="button" data-href="#背景特效-2">动态彩带</button></li><li class="tab"><button type="button" data-href="#背景特效-3">canvas-nest</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="背景特效-1"><p>好看的綵带背景，可设置每次刷新更换綵带，或者每次点击更换綵带<br>修改 <code>主题配置文件</code> <code>canvas_ribbon</code></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="背景特效-2"><p>好看的彩带背景，会飘动<br>修改 <code>主题配置文件</code> <code>canvas_fluttering_ribbon</code></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="背景特效-3"><p>修改 <code>主题配置文件</code> <code>canvas_nest</code></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h2 id="鼠标点击效果"><a href="#鼠标点击效果" class="headerlink" title="鼠标点击效果"></a>鼠标点击效果</h2><div class="tabs" id="鼠标点击"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#鼠标点击-1"><i class="fas fa-star-christmas"></i>烟花</button></li><li class="tab"><button type="button" data-href="#鼠标点击-2"><i class="fas fa-heart"></i>爱心</button></li><li class="tab"><button type="button" data-href="#鼠标点击-3"><i class="fas fa-a"></i>文字</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="鼠标点击-1"><p><code>zIndex</code>建议只在<code>-1</code>和<code>9999</code>上选<br><code>-1</code> 代表烟火效果在底部<br><code>9999</code> 代表烟火效果在前面</p>
+<p>修改 <code>主题配置文件</code> <code>fireworks</code></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="鼠标点击-2"><p>修改 <code>主题配置文件</code> <code>click_heart</code></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="鼠标点击-3"><p>修改 <code>主题配置文件</code> <code>ClickShowText</code></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h2 id="页面美化"><a href="#页面美化" class="headerlink" title="页面美化"></a>页面美化</h2><p>会改变ol、ul、h1-h5的样式</p>
+<p><code>field</code> 配置生效的区域</p>
+<ul>
+<li><code>post</code> 只在文章页生效</li>
+<li><code>site</code> 在全站生效</li>
+</ul>
+<p>修改 <code>主题配置文件</code> <code>beautify</code></p>
+<h2 id="自定义字体和字体大小"><a href="#自定义字体和字体大小" class="headerlink" title="自定义字体和字体大小"></a>自定义字体和字体大小</h2><h3 id="全局字体"><a href="#全局字体" class="headerlink" title="全局字体"></a>全局字体</h3><p>可自行设置字体的<code>font-family</code><br><strong>如不需要配置，请留空</strong></p>
+<p>修改 <code>主题配置文件</code> <code>font</code></p>
+<h3 id="Blog-标题字体"><a href="#Blog-标题字体" class="headerlink" title="Blog 标题字体"></a>Blog 标题字体</h3><p>可自行设置字体的<code>font-family</code><br><strong>如不需要配置，请留空。</strong><br><strong>如不需要使用网络字体，只需要把font_link留空就行</strong></p>
+<p>修改 <code>主题配置文件</code> <code>blog_title_front</code></p>
+<h2 id="网站副标题"><a href="#网站副标题" class="headerlink" title="网站副标题"></a>网站副标题</h2><p>可设置主页中显示的网站副标题或者喜欢的座右铭。</p>
+<p>修改 <code>主题配置文件</code> <code>subtitle</code></p>
+<h2 id="主页top-img显示大小"><a href="#主页top-img显示大小" class="headerlink" title="主页top_img显示大小"></a>主页top_img显示大小</h2><p>默认的显示为全屏。site-info的区域会居中显示<br>修改 <code>主题配置文件</code> <code>index_site_info_top</code></p>
+<p>注意：<code>index_top_img_height</code>的值不能使用百分比。<br>2个都不填的话，会使用默认值</p>
+<h2 id="页面加载动画preloader"><a href="#页面加载动画preloader" class="headerlink" title="页面加载动画preloader"></a>页面加载动画preloader</h2><p>当进入网页时，因为加载速度的问题，可能会导致top_img图片出现断层显示，或者网页加载不全而出现等待时间，开启preloader后，会显示加载动画，等页面加载完，加载动画会消失。</p>
+<p>配置 <code>主题配置文件</code> <code>preloader</code></p>
+<h1 id="PWD"><a href="#PWD" class="headerlink" title="PWD"></a>PWD</h1><p>要为<code>Butterfly</code>配上 PWA 特性, 你需要如下几个步骤:</p>
+<ol>
+<li><p>打开 hexo 工作目录</p>
+</li>
+<li><p><code>npm install hexo-offline --save</code> 或者 <code>yarn add hexo-offline</code></p>
+</li>
+<li><p>在根目录创建 <code>hexo-offline.config.cjs</code> 文件，并增加以下内容。</p>
+</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// offline config passed to workbox-build.</span></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">globPatterns</span>: [<span class="string">&#x27;**/*.&#123;js,html,css,png,jpg,gif,svg,webp,eot,ttf,woff,woff2&#125;&#x27;</span>],</span><br><span class="line">  <span class="comment">// 静态文件合集，如果你的站点使用了例如 webp 格式的文件，请将文件类型添加进去。</span></span><br><span class="line">  <span class="attr">globDirectory</span>: <span class="string">&#x27;public&#x27;</span>,</span><br><span class="line">  <span class="attr">swDest</span>: <span class="string">&#x27;public/service-worker.js&#x27;</span>,</span><br><span class="line">  <span class="attr">maximumFileSizeToCacheInBytes</span>: <span class="number">10485760</span>, <span class="comment">// 缓存的最大文件大小，以字节为单位。</span></span><br><span class="line">  <span class="attr">skipWaiting</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">clientsClaim</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">runtimeCaching</span>: [ <span class="comment">// 如果你需要加载 CDN 资源，请配置该选项，如果没有，可以不配置。</span></span><br><span class="line">    <span class="comment">// CDNs - should be CacheFirst, since they should be used specific versions so should not change</span></span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">urlPattern</span>: <span class="regexp">/^https:\/\/cdn\.example\.com\/.*/</span>, <span class="comment">// 可替换成你的 URL</span></span><br><span class="line">      <span class="attr">handler</span>: <span class="string">&#x27;CacheFirst&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>更多内容请查看 hexo-offline的官方文档</p>
+<ol start="4">
+<li><p>在主题配置文件中开启 pwa 选项。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">pwa:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">manifest:</span> <span class="string">/img/pwa/manifest.json</span></span><br><span class="line">  <span class="attr">apple_touch_icon:</span> <span class="string">/img/pwa/apple-touch-icon.png</span></span><br><span class="line">  <span class="attr">favicon_32_32:</span> <span class="string">/img/pwa/32.png</span></span><br><span class="line">  <span class="attr">favicon_16_16:</span> <span class="string">/img/pwa/16.png</span></span><br><span class="line">  <span class="attr">mask_icon:</span> <span class="string">/img/pwa/safari-pinned-tab.svg</span></span><br></pre></td></tr></table></figure></li>
+<li><p>在创建source&#x2F;目录中创建manifest.json文件。</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;string&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;short_name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Junzhou&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;theme_color&quot;</span><span class="punctuation">:</span> <span class="string">&quot;#49b1f5&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;background_color&quot;</span><span class="punctuation">:</span> <span class="string">&quot;#49b1f5&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;display&quot;</span><span class="punctuation">:</span> <span class="string">&quot;standalone&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;scope&quot;</span><span class="punctuation">:</span> <span class="string">&quot;/&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;start_url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;/&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;icons&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;src&quot;</span><span class="punctuation">:</span> <span class="string">&quot;images/pwaicons/36.png&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;sizes&quot;</span><span class="punctuation">:</span> <span class="string">&quot;36x36&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;src&quot;</span><span class="punctuation">:</span> <span class="string">&quot;images/pwaicons/48.png&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;sizes&quot;</span><span class="punctuation">:</span> <span class="string">&quot;48x48&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;src&quot;</span><span class="punctuation">:</span> <span class="string">&quot;images/pwaicons/72.png&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;sizes&quot;</span><span class="punctuation">:</span> <span class="string">&quot;72x72&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;src&quot;</span><span class="punctuation">:</span> <span class="string">&quot;images/pwaicons/96.png&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;sizes&quot;</span><span class="punctuation">:</span> <span class="string">&quot;96x96&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;src&quot;</span><span class="punctuation">:</span> <span class="string">&quot;images/pwaicons/144.png&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;sizes&quot;</span><span class="punctuation">:</span> <span class="string">&quot;144x144&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;src&quot;</span><span class="punctuation">:</span> <span class="string">&quot;images/pwaicons/192.png&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;sizes&quot;</span><span class="punctuation">:</span> <span class="string">&quot;192x192&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;src&quot;</span><span class="punctuation">:</span> <span class="string">&quot;images/pwaicons/512.png&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;sizes&quot;</span><span class="punctuation">:</span> <span class="string">&quot;512x512&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">          <span class="punctuation">&#125;</span></span><br><span class="line">      <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;splash_pages&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">null</span></span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>你也可以通过 Web App Manifest快速创建<code>manifest.json。</code>（Web App Manifest 要求至少包含一个 512*512 像素的图标）</p>
+</li>
+<li><p>可以通过<code>Chrome</code>插件<code>Lighthouse</code>检查 PWA 配置是否生效以及配置是否正确。</p>
+</li>
+</ol>
+<ul>
+<li>打开博客页面</li>
+<li>启动<code>Lighthouse</code>插件 (<code>Lighthouse</code>插件要求至少包含一个 512*512 像素的图标)<br>关于 PWA（渐进式增强 Web 应用）的更多内容请参閲 Google Tools for Web Developers</li>
+</ul>
+<h1 id="字数统计"><a href="#字数统计" class="headerlink" title="字数统计"></a>字数统计</h1><p>要为<code>Butterfly</code>配上字数统计特性, 你需要如下几个步骤:</p>
+<ol>
+<li><p>打开 hexo 工作目录</p>
+</li>
+<li><p><code>npm install hexo-wordcount --save</code> or <code>yarn add hexo-wordcount</code></p>
+</li>
+<li><p>修改 <code>主题配置文件</code>:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">wordcount:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">post_wordcount:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">min2read:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_wordcount:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="图片大图查看模式"><a href="#图片大图查看模式" class="headerlink" title="图片大图查看模式"></a>图片大图查看模式</h1><div class="note info flat"><p>只能开启一个</p>
+</div>
+
+<div class="tabs" id="图片查看"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#图片查看-1">注意</button></li><li class="tab"><button type="button" data-href="#图片查看-2">fancybox</button></li><li class="tab"><button type="button" data-href="#图片查看-3">medium_zoom</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="图片查看-1"><p>如果你并不想为某张图片添加大图查看模式，你可以使用 html 格式引用图片，併为图片添加 <code>no-lightbox</code> class 名。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="图片查看-2"><p>修改 <code>主题配置文件</code> <code>fancybox</code></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="图片查看-3"><p>修改 <code>主题配置文件</code> <code>medium_zoom</code></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h1 id="Snackbar-弹窗"><a href="#Snackbar-弹窗" class="headerlink" title="Snackbar 弹窗"></a>Snackbar 弹窗</h1><p>Snackbar 弹窗,根据自己爱好开启</p>
+<p>修改 <code>主题配置文件</code> <code>snackbar</code></p>
+<h1 id="其他配置"><a href="#其他配置" class="headerlink" title="其他配置"></a>其他配置</h1><h2 id="CSS-前缀"><a href="#CSS-前缀" class="headerlink" title="CSS 前缀"></a>CSS 前缀</h2><p>有些 CSS 并不是所有浏览器都支持，需要增加对应的前缀才会生效。</p>
+<p>开启 <code>css_prefix</code> 后，会自动为一些 CSS 增加前缀。（会增加 20%的体积）</p>
+<p>修改 <code>主题配置文件</code> <code>css_prefix</code></p>
+<h2 id="Open-Graph"><a href="#Open-Graph" class="headerlink" title="Open Graph"></a>Open Graph</h2><p>在 <code>head</code> 里增加一些 meta 资料，例如缩略图、标题、时间等等。当你分享网页到一些平台时，平台会读取 Open Graph 的内容，展示缩略图，标题等等信息。</p>
+<p>修改 <code>主题配置文件</code> <code>Open_Graph_meta</code></p>
+<h2 id="Instantpage"><a href="#Instantpage" class="headerlink" title="Instantpage"></a>Instantpage</h2><p>当鼠标悬停到链接上超过 65 毫秒时，Instantpage 会对该链接进行预加载，可以提升访问速度。</p>
+<p>修改 <code>主题配置文件</code> <code>instantpage</code></p>
+<h2 id="Pangu"><a href="#Pangu" class="headerlink" title="Pangu"></a>Pangu</h2><blockquote>
+<p>如果你跟我一样，每次看到网页上的中文字和英文、数字、符号挤在一块，就会坐立难安，忍不住想在它们之间加个空格。这个外挂正是你在网路世界走跳所需要的东西，它会自动替你在网页中所有的中文字和半形的英文、数字、符号之间插入空白。</p>
+</blockquote>
+<p>修改 <code>主题配置文件</code> <code>pangu</code><br><code>field</code>只支持两个参数，<code>post</code>(只在文章页生效)和<code>site</code>(全站生效)</p>
+<h1 id="Pjax"><a href="#Pjax" class="headerlink" title="Pjax"></a>Pjax</h1><p>当用户点击链接，通过ajax更新页面需要变化的部分，然后使用HTML5的pushState修改浏览器的URL地址。</p>
+<p>这样可以不用重复加载相同的资源（css&#x2F;js）， 从而提升网页的加载速度。</p>
+<p>修改 <code>主题配置文件</code> <code>pjax</code></p>
+<div class="note info flat"><p>对于一些第三方插件，有些并不支持 pjax 。<br>你可以把<strong>网页</strong>加入到 <code>exclude</code> 里，这个网页会被 pjax 排除在外。<br>点击该网页会重新加载网站</p>
+<p>使用pjax后，一些自己DIY的js可能会无效，跳转页面时需要重新调用，请参考Pjax文档<br>使用pjax后，一些个别页面加载的js&#x2F;css，将会改为所有页面都加载</p>
+</div>
+
+<div class="note warning flat"><p>Butterfly的Pjax目前仍有一些问题，请留意</p>
+<ul>
+<li>使用谷歌广告可能会报错（例如自动广告）</li>
+</ul>
+<p>如果你在使用中发现问题，欢迎反馈Bugs</p>
+</div>
+
+<h1 id="Inject"><a href="#Inject" class="headerlink" title="Inject"></a>Inject</h1><blockquote>
+<p>2.3.0以上支持</p>
+</blockquote>
+<p>如想添加额外的js&#x2F;css&#x2F;meta等等东西，可以在Inject里添加，支持添加到head(<code>&lt;/body&gt;</code>标籤之前)和bottom(<code>&lt;/html&gt;</code>标籤之前)。</p>
+<p>请注意：以标准的html格式添加内容</p>
+<p>例如</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">  	<span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;/self.css&quot;&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">  	<span class="bullet">-</span> <span class="string">&lt;script</span> <span class="string">src=&quot;xxxx&quot;&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+<p>留意: 如果你的网站根目录不是’&#x2F;‘,使用本地图片时，需加上你的根目录。<br>例如：网站是 <code>https://yoursite.com/blog</code>,引用<code>css/xx.css</code>，则设置为<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/blog/css/xx.css&quot;&gt;</code></p>
+<h1 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h1><p>配置文件中最后一部分CDN，里面是主题所引用到的文件，可自行配置CDN。（非必要请勿修改，配置后请确认链接是否能访问）  </p>
+<p>修改 <code>主题配置文件</code> <code>CDN</code></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">internal_provider</td>
+<td align="left">主题内部文件  可选 local&#x2F;jsdelivr&#x2F;unpkg&#x2F;cdnjs&#x2F;custom  lcoal 为本地加载，custom 为自定义格式，需配置 <code>custom_format</code>  <strong>注意:</strong> 如果使用的是 Dev 版，只能设置为 local</td>
+</tr>
+<tr>
+<td align="left">third_party_provider</td>
+<td align="left">第三方文件  可选 local&#x2F;jsdelivr&#x2F;unpkg&#x2F;cdnjs&#x2F;custom  lcoal 为本地加载，custom 为自定义格式，需配置 <code>custom_format</code>  <strong>注意:</strong> 如果你选择 local 需要安装 <code>hexo-butterfly-extjs</code> 插件</td>
+</tr>
+<tr>
+<td align="left">version	true&#x2F;false</td>
+<td align="left">为 cdn 加上指定版本号</td>
+</tr>
+<tr>
+<td align="left">custom_format</td>
+<td align="left">自定义格式</td>
+</tr>
+<tr>
+<td align="left">option</td>
+<td align="left">你可以在这里更换部分文件,会覆盖原有的配置</td>
+</tr>
+</tbody></table>
+<h2 id="version"><a href="#version" class="headerlink" title="version"></a>version</h2><p>如需修改版本号，可修改<code>主题目录</code>的 ‘plugins.yml’ 中对应插件的 version</p>
+<p>请确保你修改的版本号，你所使用的 cdn 有<strong>收录</strong></p>
+<h2 id="custom-format"><a href="#custom-format" class="headerlink" title="custom_format"></a>custom_format</h2><p>提供以下参数</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">name</td>
+<td align="left">npm 上的包名</td>
+</tr>
+<tr>
+<td align="left">file</td>
+<td align="left">npm 上的文件路径</td>
+</tr>
+<tr>
+<td align="left">min_file</td>
+<td align="left">npm 上的文件路径（压缩过的文件）</td>
+</tr>
+<tr>
+<td align="left">cdnjs_name</td>
+<td align="left">cdnjs 上的包名</td>
+</tr>
+<tr>
+<td align="left">cdnjs_file</td>
+<td align="left">cdnjs 上的文件路径</td>
+</tr>
+<tr>
+<td align="left">min_cdnjs_file</td>
+<td align="left">cdnjs 上的文件路径（压缩过的文件）</td>
+</tr>
+<tr>
+<td align="left">version</td>
+<td align="left">插件版本号</td>
+</tr>
+</tbody></table>
+<p>部分可用的第三方 CDN 列表</p>
+<blockquote>
+<p>请确保你选择的 CDN 有收录主题使用的第三方插件</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">提供商</th>
+<th align="left">格式</th>
+<th>备註</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Staticfile（七牛云）</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://cdn.staticfile.org/$%7Bcdnjs_name%7D/$%7Bversion%7D/$%7Bmin_cdnjs_file%7D">https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}</a></td>
+<td>同步 cdnjs</td>
+</tr>
+<tr>
+<td align="left">BootCDN</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://cdn.bootcdn.net/ajax/libs/$%7Bcdnjs_name%7D/$%7Bversion%7D/$%7Bmin_cdnjs_file%7D">https://cdn.bootcdn.net/ajax/libs/${cdnjs_name}/${version}/${min_cdnjs_file}</a></td>
+<td>同步 cdnjs</td>
+</tr>
+<tr>
+<td align="left">Baomitu（360）</td>
+<td align="left">最新版本： <a target="_blank" rel="noopener" href="https://lib.baomitu.com/$%7Bcdnjs_name%7D/latest/$%7Bmin_cdnjs_file%7D">https://lib.baomitu.com/${cdnjs_name}/latest/${min_cdnjs_file}</a>  指定版本：<a target="_blank" rel="noopener" href="https://lib.baomitu.com/$%7Bcdnjs_name%7D/$%7Bversion%7D/$%7Bmin_cdnjs_file%7D">https://lib.baomitu.com/${cdnjs_name}/${version}/${min_cdnjs_file}</a></td>
+<td>同步 cdnjs</td>
+</tr>
+<tr>
+<td align="left">Elemecdn</td>
+<td align="left">最新版本： <a target="_blank" rel="noopener" href="https://npm.elemecdn.com/$%7Bname%7D@latest/$%7Bfile%7D">https://npm.elemecdn.com/${name}@latest/${file}</a>  指定版本： <a target="_blank" rel="noopener" href="https://npm.elemecdn.com/$%7Bname%7D@$%7Bversion%7D/$%7Bfile%7D">https://npm.elemecdn.com/${name}@${version}/${file}</a></td>
+<td>同步 npm</td>
+</tr>
+</tbody></table>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">无名站长</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2022/08/22/%E4%B8%BB%E9%A2%98%E5%8A%9F%E8%83%BD%E9%85%8D%E7%BD%AE2/">http://example.com/2022/08/22/%E4%B8%BB%E9%A2%98%E5%8A%9F%E8%83%BD%E9%85%8D%E7%BD%AE2/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">无名の小站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/avatar.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/08/24/hello-world/"><img class="prev-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Hello World</div></div></a></div><div class="next-post pull-right"><a href="/2022/08/20/%E5%85%B6%E4%BD%99%E4%B8%BB%E9%A2%98%E5%8A%9F%E8%83%BD%E9%85%8D%E7%BD%AE/"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">其余主题功能配置</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">无名站长</div><div class="author-info__description">Stay hungry, stay foolish.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" href="/about/me/"><i class="fas fa-address-card"></i><span>关于站长</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%84%E8%AE%BA"><span class="toc-number">1.</span> <span class="toc-text">评论</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9C%A8%E7%BA%BF%E8%81%8A%E5%A4%A9"><span class="toc-number">2.</span> <span class="toc-text">在线聊天</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%86%E4%BA%AB"><span class="toc-number">3.</span> <span class="toc-text">分享</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2%E7%B3%BB%E7%BB%9F"><span class="toc-number">4.</span> <span class="toc-text">搜索系统</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E9%AA%8C%E8%AF%81"><span class="toc-number">5.</span> <span class="toc-text">网站验证</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E7%BB%9F%E8%AE%A1"><span class="toc-number">6.</span> <span class="toc-text">分析统计</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B9%BF%E5%91%8A"><span class="toc-number">7.</span> <span class="toc-text">广告</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Math-%E6%95%B0%E5%AD%A6"><span class="toc-number">8.</span> <span class="toc-text">Math 数学</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BE%8E%E5%8C%96-x2F-%E7%89%B9%E6%95%88"><span class="toc-number">9.</span> <span class="toc-text">美化&#x2F;特效</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%BB%E9%A2%98%E8%89%B2"><span class="toc-number">9.1.</span> <span class="toc-text">自定义主题色</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E8%83%8C%E6%99%AF"><span class="toc-number">9.2.</span> <span class="toc-text">网站背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#footer-%E8%83%8C%E6%99%AF"><span class="toc-number">9.3.</span> <span class="toc-text">footer 背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%AD%97%E6%95%88%E6%9E%9C"><span class="toc-number">9.4.</span> <span class="toc-text">打字效果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E7%89%B9%E6%95%88"><span class="toc-number">9.5.</span> <span class="toc-text">背景特效</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E6%95%88%E6%9E%9C"><span class="toc-number">9.6.</span> <span class="toc-text">鼠标点击效果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E7%BE%8E%E5%8C%96"><span class="toc-number">9.7.</span> <span class="toc-text">页面美化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93%E5%92%8C%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F"><span class="toc-number">9.8.</span> <span class="toc-text">自定义字体和字体大小</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E5%AD%97%E4%BD%93"><span class="toc-number">9.8.1.</span> <span class="toc-text">全局字体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Blog-%E6%A0%87%E9%A2%98%E5%AD%97%E4%BD%93"><span class="toc-number">9.8.2.</span> <span class="toc-text">Blog 标题字体</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E5%89%AF%E6%A0%87%E9%A2%98"><span class="toc-number">9.9.</span> <span class="toc-text">网站副标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A1%B5top-img%E6%98%BE%E7%A4%BA%E5%A4%A7%E5%B0%8F"><span class="toc-number">9.10.</span> <span class="toc-text">主页top_img显示大小</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BBpreloader"><span class="toc-number">9.11.</span> <span class="toc-text">页面加载动画preloader</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PWD"><span class="toc-number">10.</span> <span class="toc-text">PWD</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1"><span class="toc-number">11.</span> <span class="toc-text">字数统计</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E5%A4%A7%E5%9B%BE%E6%9F%A5%E7%9C%8B%E6%A8%A1%E5%BC%8F"><span class="toc-number">12.</span> <span class="toc-text">图片大图查看模式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Snackbar-%E5%BC%B9%E7%AA%97"><span class="toc-number">13.</span> <span class="toc-text">Snackbar 弹窗</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E9%85%8D%E7%BD%AE"><span class="toc-number">14.</span> <span class="toc-text">其他配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-%E5%89%8D%E7%BC%80"><span class="toc-number">14.1.</span> <span class="toc-text">CSS 前缀</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Open-Graph"><span class="toc-number">14.2.</span> <span class="toc-text">Open Graph</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Instantpage"><span class="toc-number">14.3.</span> <span class="toc-text">Instantpage</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pangu"><span class="toc-number">14.4.</span> <span class="toc-text">Pangu</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Pjax"><span class="toc-number">15.</span> <span class="toc-text">Pjax</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Inject"><span class="toc-number">16.</span> <span class="toc-text">Inject</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CDN"><span class="toc-number">17.</span> <span class="toc-text">CDN</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#version"><span class="toc-number">17.1.</span> <span class="toc-text">version</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#custom-format"><span class="toc-number">17.2.</span> <span class="toc-text">custom_format</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/08/24/hello-world/" title="Hello World"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2022/08/24/hello-world/" title="Hello World">Hello World</a><time datetime="2022-08-24T08:33:42.965Z" title="发表于 2022-08-24 16:33:42">2022-08-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/08/22/%E4%B8%BB%E9%A2%98%E5%8A%9F%E8%83%BD%E9%85%8D%E7%BD%AE2/" title="主题功能配置2">主题功能配置2</a><time datetime="2022-08-22T07:55:21.000Z" title="发表于 2022-08-22 15:55:21">2022-08-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/08/20/%E5%85%B6%E4%BD%99%E4%B8%BB%E9%A2%98%E5%8A%9F%E8%83%BD%E9%85%8D%E7%BD%AE/" title="其余主题功能配置">其余主题功能配置</a><time datetime="2022-08-20T04:40:51.000Z" title="发表于 2022-08-20 12:40:51">2022-08-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/08/19/%E6%96%87%E4%BB%B6%E5%A4%B4%E5%86%85%E5%AE%B9%E8%AF%B4%E6%98%8E/" title="文件头内容说明">文件头内容说明</a><time datetime="2022-08-19T10:56:51.000Z" title="发表于 2022-08-19 18:56:51">2022-08-19</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022  <i id="heartbeat" class="fa fas fa-heartbeat"></i> 无名站长</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script async src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_clock_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://fastly.jsdelivr.net/gh/tzy13755126023/BLOG_SOURCE/theme_f/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_injector_config();
+  }
+  </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax src="https://unpkg.zhimg.com/hexo-butterfly-clock/lib/clock.min.js"></script><!-- hexo injector body_end end --></body></html>
