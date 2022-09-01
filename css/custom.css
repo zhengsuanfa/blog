@@ -1,11 +1,11 @@
 /* 自定义字体 */
-@font-face {
+/* @font-face {
     font-family: 'tzy';
-    /* 字体名自定义即可 */
+    字体名自定义即可
     src: url('https://fastly.jsdelivr.net/gh/tzy13755126023/BLOG_SOURCE/font/ZhuZiAWan.woff2');
-    /* 字体文件路径 */
+    字体文件路径
     font-display: swap;
-}
+} */
 
 body,
 .gitcalendar {
