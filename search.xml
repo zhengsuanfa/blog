@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>Nmap扫描</title>
+      <link href="/2022/09/05/Nmap%E6%89%AB%E6%8F%8F/"/>
+      <url>/2022/09/05/Nmap%E6%89%AB%E6%8F%8F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="nmap扫描命令合集1"><a href="#nmap扫描命令合集1" class="headerlink" title="nmap扫描命令合集1"></a>nmap扫描命令合集1</h1><h2 id="TCP同步扫描"><a href="#TCP同步扫描" class="headerlink" title="TCP同步扫描"></a>TCP同步扫描</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -sS [IP]</span><br></pre></td></tr></table></figure><h2 id="不ping主机进行扫描"><a href="#不ping主机进行扫描" class="headerlink" title="不ping主机进行扫描"></a>不ping主机进行扫描</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -P0 [IP]</span><br></pre></td></tr></table></figure><h2 id="UDP扫描渗透测试"><a href="#UDP扫描渗透测试" class="headerlink" title="UDP扫描渗透测试"></a>UDP扫描渗透测试</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -sU [IP]</span><br></pre></td></tr></table></figure><blockquote><p>指定端口扫描</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -sU -p [端口号1],[端口号2] [IP]</span><br></pre></td></tr></table></figure><h2 id="滑动窗口扫描"><a href="#滑动窗口扫描" class="headerlink" title="滑动窗口扫描"></a>滑动窗口扫描</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -sW [IP]</span><br></pre></td></tr></table></figure><h2 id="RPC扫描渗透测试"><a href="#RPC扫描渗透测试" class="headerlink" title="RPC扫描渗透测试"></a>RPC扫描渗透测试</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -sR [IP]</span><br></pre></td></tr></table></figure><h1 id="nmap扫描命令合集2"><a href="#nmap扫描命令合集2" class="headerlink" title="nmap扫描命令合集2"></a>nmap扫描命令合集2</h1><h2 id="秘密FIN扫描"><a href="#秘密FIN扫描" class="headerlink" title="秘密FIN扫描"></a>秘密FIN扫描</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -sF [IP]</span><br></pre></td></tr></table></figure><h2 id="圣诞树（Xmas-Tree）扫描"><a href="#圣诞树（Xmas-Tree）扫描" class="headerlink" title="圣诞树（Xmas Tree）扫描"></a>圣诞树（Xmas Tree）扫描</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -sX [IP]</span><br></pre></td></tr></table></figure><h2 id="使用SYN包而不是用ACK包进行扫描渗透测试"><a href="#使用SYN包而不是用ACK包进行扫描渗透测试" class="headerlink" title="使用SYN包而不是用ACK包进行扫描渗透测试"></a>使用SYN包而不是用ACK包进行扫描渗透测试</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -PS [IP]</span><br></pre></td></tr></table></figure><h2 id="ACK和ICMP两种扫描类型并行的扫描渗透测试"><a href="#ACK和ICMP两种扫描类型并行的扫描渗透测试" class="headerlink" title="ACK和ICMP两种扫描类型并行的扫描渗透测试"></a>ACK和ICMP两种扫描类型并行的扫描渗透测试</h2><blockquote><p>默认模块扫描</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -PB [IP]</span><br></pre></td></tr></table></figure><h1 id="nmap扫描命令合集3"><a href="#nmap扫描命令合集3" class="headerlink" title="nmap扫描命令合集3"></a>nmap扫描命令合集3</h1><h2 id="查看本地路由与接口"><a href="#查看本地路由与接口" class="headerlink" title="查看本地路由与接口"></a>查看本地路由与接口</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap --iflist [IP]</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网安笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nmap </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>web服务器搭建</title>
+      <link href="/2022/09/05/web%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/"/>
+      <url>/2022/09/05/web%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</url>
+      
+        <content type="html"><![CDATA[<h1 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h1><ol><li>centos虚拟机<blockquote><p>注意：centos老版本可能停止维护无法更新下载源，建议使用最新镜像包进行实验<br><a href="https://www.centos.org/">centos官网</a></p></blockquote></li></ol><h1 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h1><h2 id="一、yum安装"><a href="#一、yum安装" class="headerlink" title="一、yum安装"></a>一、yum安装</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网安笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 服务器搭建 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>weevely的简单使用</title>
       <link href="/2022/09/01/wlaq/weevely%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"/>
       <url>/2022/09/01/wlaq/weevely%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</url>
